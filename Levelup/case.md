@@ -31,7 +31,8 @@ postgres=# SELECT * FROM orders;
 
 ## GIVE ME QUERY TO FETCH DATA LIKE BELOW , USE JOIN TO COMBINE BOTH TABLE AND CASE WHEN TO FIND COST PRICE_CATEGORY ALSO GO FOR RIGHT AND LEFT JOIN AND NULL CASES.
 
-```
+```SQL
+
  users_id |  name   |  product  |   cost   | price_category
 ----------+---------+-----------+----------+----------------
         1 | BOBBY   | cap       | 150.0000 | AUKAT_AHAR
