@@ -63,4 +63,17 @@ name LIMIT 4;
  Charlie
 (4 rows)
 
+
+
+```
+
+```SQL
+CREATE TABLE Students (id SERIAL  PRIMARY KEY , SR_NO INT NUMERIC , name VARCHAR(100),email VARCHAR(100));
+
+CREATE TABLE Teachers (id SERIAL PRIMARY KEY, name VARCHAR(100),email VARCHAR(100), department VARCHAR(100));
+
+CREATE TABLE Courses(id SERIAL PRIMARY KEY, course_id VARCAHR(20) NOT NULL , course_name VARCHAR(100), teacher_id INT , FOREIGN KEY (teacher_id) REFERENCES Teachers(id));
+
+CREATE TABLE Enrollments(enrollment_id INT PRIMARY KEY, students_idINT, courses_id VARCHAR(20), FOREIGN KEY (students_id) REFERENCES Students(SR_NO) , FOREIGN KEY (courses_id) REFERENCES Courses());
+
 ```
